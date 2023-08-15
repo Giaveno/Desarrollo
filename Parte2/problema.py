@@ -35,7 +35,7 @@ def menu():
     
 def ingresar_valor():
     numero = int(input("Ingrese un valor: "))
-    return(numer)
+    return(numero)
 
 def suma(valor_uno, valor_dos):
     rtdo = valor_uno + valor_dos
@@ -57,7 +57,7 @@ def division(valor_uno, valor_dos):
 numero_uno=-1
 numero_dos=-1
 opc = menu()
-while (opc != 8):
+while (opc != 7):
     if opc == 1:
         numero_uno = ingresar_valor()
     if opc == 2:
@@ -66,7 +66,7 @@ while (opc != 8):
         if numero_uno == -1 or numero_dos == -1:
             print("\nERROR\n")
             break
-        elif opc == 4: 
+        elif opc == 3: 
             resultado = suma(numero_uno, numero_dos)
             print(f"\nEl resultado de la suma es: {resultado}")
         elif opc == 4:
@@ -75,7 +75,7 @@ while (opc != 8):
         elif opc == 5:
             resultado = multiplicacion(numero_uno, numero_dos)
             print(f"\nEl resultado de la multiplicación es: {resultado}")
-        elif opc != 6:
+        elif opc == 6:
             resultado = division(numero_uno, numero_dos)
             print(f"\nEl resultado de la división es de: {resultado}")
     opc = menu()
